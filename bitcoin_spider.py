@@ -21,7 +21,7 @@ coinunited="https://cu-api.com/cumarket/api/market/getAllPriceInfo"
 
 def Profit():
     headers = {"platform":"`web`",'Content-Type':'application/json',
-    'X-authorization': '`Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJLYXNsZWFybkBvdXRsb29rLmNvbSIsImp0aSI6IjEyODYwMzkwIiwic2NvcGVzIjpbXSwiaXNzIjoiY29tLmltZS5pc3N1ZXIiLCJpYXQiOjE3MDE5OTc3NDMsImV4cCI6MTcwNDU4OTc0M30.RCsWKArePX6ftLMk9UMRfujsWdmTIxGNwB-Cb1L62V-jG_5t1RQaysmEY_YBI8cSpzKQuIYH_zBGKssEEM9a6A','Connection':'close'
+    'X-authorization': '`Bearer <Your tokens after `Bearer>','Connection':'close'
     }  
     url="https://cu-api.com/newcuuser/api/private/margin/marginInfo?crypto=USDT&calcCoins=BTCUSDT"
     html=requests.get(headers=headers,url=url)
